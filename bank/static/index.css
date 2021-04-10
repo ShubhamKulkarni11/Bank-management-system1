@@ -1,6 +1,8 @@
 .container-fluid{
     height: 500px;
-    background-color: rgb(248, 242, 244);
+
+    background-position: center;
+    background-size: cover;
 
 }
 .card img{
@@ -17,31 +19,15 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar-brand{
-    font-size: 30px;
-}
-.navbar-nav{
-    font-size: 22px;
-}
-.navbar-nav li a{
-   margin-left: 10px;
-   color: rgb(22, 22, 134);
-}
-.navbar{
 
-background-color:#B0A6AA;
-}
-.b {
-    color: green;
 
-}
-.nav-link:hover{
-    color: green;
 
-}
-.heading h4{
 
-}
+
+
 .heading h1{
     color:#FF8040;
+}
+.footer{
+
 }

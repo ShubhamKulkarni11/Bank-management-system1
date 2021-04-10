@@ -1,29 +1,28 @@
 {% extends 'bank/basic.html' %}
 {% block css %}
 {% load static %}
-    <link rel="stylesheet" href="{%static 'index.css'%}">
+    <link rel="stylesheet" href="{%static 'home.css' %}">
 
 {% endblock %}
 
 
 
 {% block body %}
+{% load static %}
     <div class="container-fluid">
         <div class="row">
-            <div  class="col-md-6 d-flex flex-column justify-content-center align-items-center heading">
-                <h4 style="font-weight:bold;">Welcome to </h4>
-                <h1 style="color:#FF8040; font-weight:bold;">National Bank</h1>
+            <div  class="col-md-8 d-flex flex-column justify-content-md-start  heading">
+                <h4 style="font-weight:bold; color:green;">Welcome to </h4>
+                <h1 style="color:#FF8040; font-size:50px; font-weight:bold;">National Bank</h1>
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <img src="{%static 'bank.jfif'%}" class="img-fluid img1" alt="" >
-            </div>
+
 
         </div>
 
     </div>
-    <div class="container">
-        <div class="row d-flex justify-content-md-around justify-content-center align-items-center mt-5">
-            <div class="col-md-3">
+    <div class="container ">
+        <div class="row d-flex justify-content-md-around justify-content-center section2 align-item-center mt-5">
+            <div class="col-md-3 ">
                 <div class="card" style="width: 18rem;">
                     <img src="{%static 'user.jpg'%}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -35,7 +34,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{%static 'trasiction.jpg'%}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="/bank/transiction/" class="btn btn-outline-success">Make Transition</a>
+                      <a href="/bank/transiction/" class="btn btn-outline-success">Make Transaction</a>
                     </div>
                   </div>
             </div>
