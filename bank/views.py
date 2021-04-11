@@ -22,7 +22,7 @@ def make_transiction(request,id):
     print(ammount)
     print(to_id)
     b=User.objects.raw('select * from bank_user where id=%s',[to_id])
-    if len(b) !=0:
+    if len(b) !=0 and ammount!=0:
         total2=b[0].balance+int(ammount)
 
         if(a[0].balance>=int(ammount)):

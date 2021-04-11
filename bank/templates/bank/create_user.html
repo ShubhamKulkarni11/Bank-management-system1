@@ -1,52 +1,8 @@
 {% extends 'bank/basic.html' %}
 {% block css %}
+{% load static %}
+<link rel="stylesheet" href="{%static 'create_user.css' %}">
 
-    <style>
-        .inner_div{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            width: 100%;
-        }
-        .inner_div label{
-            font-size: 18px;
-            color: rgb(17, 17, 16);
-            font-weight: 600;
-        }
-        .col-md-8{
-            display: flex;
-            justify-content: center;
-
-
-        }
-        .col-md-10{
-            border: blanchedalmond 2px solid;
-            padding: 50px;
-            border-radius: 50px;
-        }
-
-        .img1{
-            height: 200px;
-        }
-        .inner_div input{
-            height: 40px;
-            border-radius: 5px;
-        }
-        .row{
-            display: flex;
-            justify-content: center;
-        }
-        .container{
-            margin-top: 70px;
-        }
-        .container h1{
-            margin-bottom: 40px;
-            text-align: center;
-            color: blue;
-            font-weight: bold;
-        }
-    </style>
    {% endblock %}
 {% block body %}
   <body>

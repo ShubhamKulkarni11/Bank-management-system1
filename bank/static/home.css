@@ -3,6 +3,7 @@
     background-image: url('bg.jpg');
     background-position: center;
     background-size: cover;
+    width:100%;
     background-repeat: no-repeat;
 
 }
@@ -10,9 +11,13 @@
     height: 300px;
 
 }
-.container{
-        height:70vh;
-        margin-top:10%;
+.card:hover{
+transform:translateY(-20px);
+}
+.container {
+    /* height: 70vh; */
+    margin-top: 10%;
+
 }
 .container-fluid .row{
 display:flex;
@@ -59,4 +64,21 @@ justify-content:center;
 }
 .section2{
         margin-top:50%;
+        display:flex;
+        justify-content:center;
+}
+
+@media  screen and (max-width:600px) {
+   .section2{
+       height: fit-content;
+
+   }
+   .card{
+   margin:auto;
+   }
+   .footer{
+   margin-top:1600px;
+   }
+
+
 }
