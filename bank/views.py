@@ -2,14 +2,11 @@ from django.shortcuts import render,redirect
 from .models import User,Transiction
 from django.db import connection
 import datetime
-
 # Create your views here.
 def index(request):
-
     return render(request,'bank/index.html')
 def transiction(request):
     user=User.objects.raw('select * from bank_user')
-
     return render(request,'bank/transiction.html',{'user':user})
 def make_transiction(request,id):
     a=User.objects.raw('select * from bank_user where id=%s',[id])
@@ -17,14 +14,12 @@ def make_transiction(request,id):
     all={'a':a[0],'users':users}
     ammount=request.POST.get('ammount',0)
     total1=a[0].balance-int(ammount)
-
     to_id=request.POST.get('reciver',1)
     print(ammount)
     print(to_id)
     b=User.objects.raw('select * from bank_user where id=%s',[to_id])
     if len(b) !=0 and ammount!=0:
         total2=b[0].balance+int(ammount)
-
         if(a[0].balance>=int(ammount)):
             m = User.objects.get(id=id)
             m.balance = total1
@@ -40,7 +35,7 @@ def make_transiction(request,id):
     return render(request,'bank/make_transiction.html',all)
 def transiction_history(reuest):
     users=User.objects.raw('select * from bank_transiction')
-    {'user':users}
+    {'user': users}
     return render(reuest,'bank/transiction_history.html', {'user':users})
 def create_user(reuest):
     name=reuest.POST.get('name',"")
