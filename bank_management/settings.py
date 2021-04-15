@@ -25,7 +25,7 @@ SECRET_KEY = '01&@5y9(6tq$!jkqus_&*_+!vvbyo#5%m9_=(8(41g8b!2^1z3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['127.0.0.1','bankmanagement1.herokuapp.com']
 
 
 # Application definition
